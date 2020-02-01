@@ -1,5 +1,5 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Hannes .vimrc
+" Marko .vimrc
 "  based on:
 "  https://raw.githubusercontent.com/atomantic/dotfiles/master/.vimrc
 "  and
