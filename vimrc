@@ -1,5 +1,5 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Hannes .vimrc
+" Marko .vimrc
 "  based on:
 "  https://raw.githubusercontent.com/atomantic/dotfiles/master/.vimrc
 "  and
@@ -167,8 +167,8 @@ set enc=utf-8 " UTF-8 as default encoding
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Options for vim-template (and others??)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:username = "Hannes Bellmer"
-let g:email ="hannes.bellmer@netapp.com"
+let g:username = "Marko Hauke"
+let g:email ="<>"
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Options for NERDTree, from https://github.com/scrooloose/nerdtree
