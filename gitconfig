@@ -1,5 +1,5 @@
 [user]
-	name = Hannes Bellmer
+	name = Marko Hauke
 	email = '<>'
 [core]
   excludesfile = ~/.gitignore
@@ -32,6 +32,6 @@
 [gc]
   auto=1
 [github]
-	user = trulleberg
+	user = mhauke
 [push]
 	default = simple
