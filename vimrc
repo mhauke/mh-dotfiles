@@ -89,7 +89,7 @@ set report=0 " tell us when anything is changed via :...
 set noerrorbells " don't make noise
 set list " we do what to show tabs, to ensure we get them out of my files
 "set listchars=tab:>-,trail:-,eol:$ " show tabs and trailing whitespace
-set listchars=tab:»·,trail:·,precedes:«,extends:» " show tabs and trailing whitespace
+set listchars=tab:>-,trail:.,precedes:<,extends:> " show tabs and trailing whitespace
 set lsp=0 " space it out a little more (easier to read)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Split related
