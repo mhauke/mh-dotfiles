@@ -11,8 +11,9 @@ fi
 
 
 #Start with my aliasses
+alias zshconfig="nano ~/.zshrc"
 alias dusch="du -sch * | sort -k1 -h "
-alias hmux='tmux attach-session -t hb || tmux new-session -s hb'
+alias mhmux='tmux attach-session -t mh || tmux new-session -s mh'
 alias g='git'
 alias free="free -m"
 alias df="df -h"
@@ -27,3 +28,14 @@ alias cpp='rsync --progress -ah'
 alias doch='sudo "$BASH" -c "$(history -p !!)"'
 alias ip='ip -color'
 alias ips='ip -brief a'
+alias k='kubectl'
+alias kg='kubectl get'
+alias kgp='kubectl get pod'
+alias kgpw='kubectl get pod -o wide'
+alias kgdep='kubectl get deployment'
+alias kgsvc='kubectl get service'
+alias kging='kubectl get ingress'
+alias kgcm='kubectl get configmap'
+alias kgsec='kubectl get secret'
+alias kd='kubectl describe'
+alias ka='kubectl apply -f'

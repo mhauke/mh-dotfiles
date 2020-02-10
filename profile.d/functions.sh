@@ -59,3 +59,10 @@ body() {
     printf '%s\n' "$header"
     "$@"
 }
+
+# Pimp kubeconfig files in separate directories.
+# Usage: kube clusterA
+kube() {
+  export KUBECONFIG=~/.kube/${1}/kubeconfig
+}
+
