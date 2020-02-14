@@ -39,8 +39,3 @@ alias kgcm='kubectl get configmap'
 alias kgsec='kubectl get secret'
 alias kd='kubectl describe'
 alias ka='kubectl apply -f'
-
-# more advanced aliases for zsh
-alias -s {yml,yaml}=vim
-alias -s {json}=vim
-alias -g G='| grep -i'
