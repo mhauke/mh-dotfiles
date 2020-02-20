@@ -83,7 +83,8 @@ function git_zsh_prompt_vars {
 
   if [[ $(git rev-parse --is-inside-work-tree 2> /dev/null) == "true" ]]; then
     local git_status="$(git status -b --porcelain 2> /dev/null || git status --porcelain 2> /dev/null)"
-    if [[ -n "${git_status}" ]] && [[ "${git_status}" != "\n" ]] && [[ -n '$(grep -v ^# <<< "${git_status}")' ]]; then
+    local git_grepstatus=$(grep -v "^#" <<< "${git_status}")
+    if [[ -n "${git_status}" ]] && [[ "${git_status}" != "\n" ]] && [[ -n "${git_grepstatus}" ]]; then
       GIT_STATE=$PROMPT_PREFIX$PROMPT_DIRTY$PROMPT_SUFFIX
     else
       GIT_STATE=$PROMPT_PREFIX$PROMPT_CLEAN$PROMPT_SUFFIX
