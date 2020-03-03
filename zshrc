@@ -17,3 +17,4 @@ compinit
 alias -s {yml,yaml}=vim
 alias -s {json}=vim
 alias -g G='| grep -i'
+alias d='dirs -v | head -10'
