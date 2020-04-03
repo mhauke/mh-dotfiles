@@ -18,3 +18,11 @@ alias -s {yml,yaml}=vim
 alias -s {json}=vim
 alias -g G='| grep -i'
 alias d='dirs -v | head -10'
+
+# added pyenv variables
+if [ -f ~/.pyenv/bin/pyenv ]; then
+    export PYENV_ROOT="$HOME/.pyenv"
+    export PATH="$PYENV_ROOT/bin:$PATH"
+    eval "$(pyenv init -)"
+    exit 1
+fi
