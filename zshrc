@@ -20,11 +20,9 @@ alias -g G='| grep -i'
 alias d='dirs -v | head -10'
 
 # added pyenv variables
-if [ -e "$HOME/.pyenv/.pyenvrc" ]; then
-  source $HOME/.pyenv/.pyenvrc
-  if [ -e "$HOME/.pyenv/completions/pyenv.zsh" ]; then
-    source $HOME/.pyenv/completions/pyenv.zsh
-  elif [ -e "/usr/local/opt/pyenv/completions/pyenv.zsh" ]; then
-    source /usr/local/opt/pyenv/completions/pyenv.zsh
-  fi
+if [ -f ~/.pyenv/bin/pyenv ]; then
+    export PYENV_ROOT="$HOME/.pyenv"
+    export PATH="$PYENV_ROOT/bin:$PATH"
+    eval "$(pyenv init -)"
+    exit 1
 fi
